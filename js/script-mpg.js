@@ -12,6 +12,10 @@ do {
     } else {
         alert('One or both entries are invalid.');
     }
-    again = prompt('Run application again? (y or n)', 'y');
+// Validate Repeat Entry in Lab 5
+    do {
+        again = prompt('Run application again? (y or n)', 'y');
+    } while (again != "y" && again != "n");
+// End of validation
 } while (again === 'y');
 console.log('Application has exited.');
